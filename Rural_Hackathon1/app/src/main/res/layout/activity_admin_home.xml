@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_admin_home"
+    android:orientation="vertical"
+    android:background="@drawable/bghome3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.roline.rural_hackathon1.AdminHome">
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="321dp"
+        android:id="@+id/listview"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Reason for power cut"
+        android:ems="10"
+        android:id="@+id/editText3" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner" />
+
+    <Button
+        android:text="Notify"
+        android:background="#c99dea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notify1" />
+</LinearLayout>

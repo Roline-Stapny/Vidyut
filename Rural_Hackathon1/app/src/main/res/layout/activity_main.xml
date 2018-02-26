@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/bghome3"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.roline.rural_hackathon1.MainActivity">
+
+    <TextView
+        android:text="Name"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:text="Aadhar no"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:textSize="15sp"
+        android:id="@+id/Name"
+        android:layout_marginStart="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Aadhar no 12 digit"
+        android:ems="10"
+        android:id="@+id/aadhar"
+        android:layout_below="@+id/Name"
+        android:layout_alignStart="@+id/Name" />
+
+    <TextView
+        android:text="password"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:layout_alignBaseline="@+id/password"
+        android:layout_alignBottom="@+id/password"
+        android:layout_alignStart="@+id/textView12" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="phone number"
+
+        android:ems="10"
+        android:id="@+id/mobile"
+        android:layout_alignStart="@+id/address"
+        android:layout_marginStart="17dp"
+        android:layout_above="@+id/button" />
+
+    <TextView
+        android:text="pnone no"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:layout_alignBaseline="@+id/mobile"
+        android:layout_alignBottom="@+id/mobile"
+        android:layout_alignStart="@+id/textView15" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="password"
+        android:ems="10"
+        android:id="@+id/password"
+        android:layout_above="@+id/mobile"
+        android:layout_marginBottom="14dp"
+        android:layout_alignStart="@+id/metre" />
+
+    <TextView
+        android:text="Meter no"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:layout_alignBottom="@+id/metre"
+        android:layout_alignStart="@+id/textView15" />
+
+    <TextView
+        android:text="state"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_alignBottom="@+id/state"
+        android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:text="Region"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_alignBottom="@+id/spinnerregion"
+        android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:text="District"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_alignBaseline="@+id/district"
+        android:layout_alignBottom="@+id/district"
+        android:layout_alignStart="@+id/textView12" />
+
+    <TextView
+        android:text="Address"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_alignBottom="@+id/address"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Full address"
+        android:ems="10"
+        android:id="@+id/address"
+        android:layout_below="@+id/aadhar"
+        android:layout_alignStart="@+id/aadhar"
+        android:layout_marginTop="21dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="District"
+        android:ems="10"
+        android:id="@+id/district"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/spinnerregion"
+        android:layout_alignEnd="@+id/address"
+        android:layout_alignStart="@+id/address" />
+
+    <Spinner
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerregion"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/address"
+        android:layout_marginTop="22dp"
+        android:layout_alignStart="@+id/district" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Meter no"
+        android:ems="10"
+        android:id="@+id/metre"
+        android:layout_above="@+id/password"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/state" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="State"
+        android:ems="10"
+        android:id="@+id/state"
+        android:layout_above="@+id/metre"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp"
+        android:layout_alignStart="@+id/district" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="submit"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView14" />
+
+</RelativeLayout>
